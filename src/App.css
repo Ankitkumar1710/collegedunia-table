@@ -1,38 +1,134 @@
 .App {
-  text-align: center;
+  font-family: Arial, sans-serif;
+  padding: 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+table {
+  width: 100%;
+  border-collapse: collapse;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+th {
+  cursor: pointer;
+  background-color: #88bdc4;
+  color: #fff;
+}
+
+
+tr:hover {
+  background-color: #ddd;
+}
+
+.search-container {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-bottom: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.search-input {
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.sort-container {
+  display: flex;
+  align-items: center;
+}
+
+.sort-container span {
+  margin-right: 10px;
+}
+
+.college-info {
+  display: flex;
+  align-items: center;
+  margin: 0;
+}
+
+.college-logo {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+.actions-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.featured-row td {
+  background-color: #fff3eb;
+}
+.featured {
+  margin-right: 10px;
+  padding: 8px 16px;
+  border: none;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  background-color: rgb(255, 19, 19);
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+}
+.apply-now-button {
+  margin-right: 10px;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+  background-color: #fff;
+  color: #ff7900;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+}
+.download-brochure-button {
+  margin-right: 10px;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+  background-color: #fff;
+  color: green;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.apply-now-button:hover,
+.download-brochure-button:hover {
+  background-color: #f7f1f1; /* Darker Green */
+}
+
+.comparison-checkbox {
+  margin-right: 5px;
+}
+
+.compare-container p {
+ 
+  display: flex;
+  flex-direction: row;
+}
+.rupees{
+  color: #3eae8d;
+}
+.gray{
+  color: gray;
+  font-size: small;
+}
+.orange{
+  color: #ff7900;
 }
